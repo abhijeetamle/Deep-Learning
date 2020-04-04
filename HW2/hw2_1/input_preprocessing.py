@@ -65,8 +65,6 @@ def filter_token(string):
 if __name__ == "__main__":
     np.random.seed(9487)
 
-    # training data path
-
     # video features
     video_feat_folder = '/content/drive/My Drive/Deep_Learning/MLDS_hw2_1_data/training_data/feat/'
 
