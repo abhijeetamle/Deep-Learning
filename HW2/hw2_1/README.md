@@ -8,6 +8,7 @@ This script will download the model, word2index and index2word pickle objects, a
 Command to run the script: `./hw2_seq2seq.sh $1 $2` where $1 is testing data directory and $2 is testset_output.txt
 
 `./hw2_seq2seq.sh testing_data_dir testset_output.txt` : this command will download the pretrained model and execute `test_model.py` with $1 and $2 as parameter. (testing_data_dir must include feat/ and id.txt)
+
 After that, it will execute `bleu_eval.py` with $2 as a parameter.
 
 **Average bleu score is 0.6815**
