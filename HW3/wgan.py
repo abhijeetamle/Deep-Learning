@@ -359,10 +359,10 @@ for i in range(total_epoch):
 
             train_noise = np.random.uniform(-1.0, 1.0, size=[train_batch_size, random_dim]).astype(np.float32)
             for k in range(d_iters):
-                #print(k)
+
                 train_image, train_label = random_batch()
                 #wgan clip weights
-                #sess.run(d_clip)
+                sess.run(d_clip)
                 
                 # Update the discriminator
                 _, dLoss = sess.run([trainer_d, d_loss],
@@ -370,13 +370,11 @@ for i in range(total_epoch):
 
             # Update the generator
             for k in range(g_iters):
-                # train_noise = np.random.uniform(-1.0, 1.0, size=[train_batch_size, random_dim]).astype(np.float32)
+
                 _, gLoss = sess.run([trainer_g, g_loss],
                                     feed_dict={random_input: train_noise, is_training: True})
 
-            # print 'train:[%d/%d],d_loss:%f,g_loss:%f' % (i, j, dLoss, gLoss)
-            
-        # save check point every 500 epoch
+        # save check point
         if i%5 == 0:
             if not os.path.exists('/content/model/'):
                 os.makedirs('/content/model/')
