@@ -19,8 +19,7 @@ After that, it will execute `bleu_eval.py` with $2 as a parameter.
 
 | `TZ860P4iTaM_15_28.avi`,a cat is playing the piano           | `qvg9eM4Hmzk_4_10.avi`,a man is picking up a car          |
 | ------------------------------------------------------------ | --------------------------------------------------------- |
-| ![](raw_videos/TZ860P4iTaM_15_28.gif)                        | ![raw](raw_videos/qvg9eM4Hmzk_4_10.gif)                   |
-| ------------------------------------------------------------ | --------------------------------------------------------- |             
+| ![](raw_videos/TZ860P4iTaM_15_28.gif)                        | ![raw](raw_videos/qvg9eM4Hmzk_4_10.gif)                   |            
 | `04Gt01vatkk_248_265.avi`,a woman is cutting a little onion  | `PeUHy0A1GF0_114_121.avi`,a woman is peeling shrimp       |
 | ![raw](raw_videos/04Gt01vatkk_248_265.gif)                   | ![raw](raw_videos/PeUHy0A1GF0_114_121.gif)                |
 
